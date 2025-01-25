@@ -7,7 +7,7 @@
   };
 
   outputs = { self, nixpkgs, nixos-cosmic, ...} @ inputs: {
-    nixosConfigurations.T14s = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.<ADDYOURHOSTNAMEHERE> = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       system = "x86_64-linux";
       modules = [
